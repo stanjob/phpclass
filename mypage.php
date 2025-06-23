@@ -39,6 +39,29 @@
 	echo '\$number1=$number1<br>';
 	echo "\$number1=$number1<br>";
 	
+	echo "<hr>";
+	
+	$number=30;
+	function local(){
+		global $number;
+		echo "\$number=$number";
+		echo "<br>";
+		
+	}
+	local();
+	echo "\$number=$number";
+	
+	echo "<hr>";
+	
+	$GLOBALS['a']=5;
+	function local2(){
+		echo "\$number=".$GLOBALS['a'];
+		echo "<br>";
+	}
+	local2();
+	echo "\$number=".$GLOBALS['a']."<br>";
+	
+	echo "I have done with git"
 	
 	
 	
