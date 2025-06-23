@@ -60,8 +60,22 @@
 	}
 	local2();
 	echo "\$number=".$GLOBALS['a']."<br>";
+	//""之間的陣列單引號要消去
+	echo "\$number=$GLOBALS[a]"."<br>";
 	
-	echo "I have done with git"
+	echo "I have done with git<br>";
+	
+	//static variable
+	
+	
+	//use . to link different variable and string
+	$name="金城武";
+	$price=400;
+	$goods="衣服";
+	
+	echo "$name"."花了$price,"."買了一件$goods<br>";
+	echo $name."花了".$price.",買了一件".$goods."<br>";
+	
 	
 	
 	
