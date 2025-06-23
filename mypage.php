@@ -23,9 +23,22 @@
 	//output
 	echo "Hello world!";
 	echo"<br>";
-	print "Hello World!";
+	print "Hello World!<br><br>";
+	
+	$price=1000;
+	$taxRate=0.05;
+	$taxAmount=$price*$taxRate;
+	$totalPrice=$price+$taxAmount;
+	echo "The tax total= $totalPrice";
+	
+	
+	
+	
+	
 	
     ?>
+	
+	
 
     
     
