@@ -76,6 +76,8 @@
 	echo "$name"."花了$price,"."買了一件$goods<br>";
 	echo $name."花了".$price.",買了一件".$goods."<br>";
 	
+	echo password_hash('mypassword123', PASSWORD_DEFAULT);
+	
 	
 	
 	
