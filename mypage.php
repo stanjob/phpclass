@@ -29,7 +29,15 @@
 	$taxRate=0.05;
 	$taxAmount=$price*$taxRate;
 	$totalPrice=$price+$taxAmount;
-	echo "The tax total= $totalPrice";
+	echo "The tax total= $totalPrice <br>";
+	
+	
+	//variable scope and \
+	$number1=20;
+	echo "\$number1=".$number1."<br>";
+	echo "\$number1=$number1<br>";
+	echo '\$number1=$number1<br>';
+	echo "\$number1=$number1<br>";
 	
 	
 	
