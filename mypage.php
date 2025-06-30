@@ -76,7 +76,15 @@
 	echo "$name"."花了$price,"."買了一件$goods<br>";
 	echo $name."花了".$price.",買了一件".$goods."<br>";
 	
-	echo password_hash('mypassword123', PASSWORD_DEFAULT);
+	echo password_hash('mypassword123', PASSWORD_DEFAULT)."<br>";
+
+	//跳脫字元
+	$a="\"hi\"";
+	echo $a."<br>";
+
+	//format sprintf
+	$fomat=sprintf("%s花了%d買了一件%s<br>",$name,$price,$goods);
+	echo $fomat;
 	
 	
 	
