@@ -85,6 +85,9 @@
 	//format sprintf
 	$fomat=sprintf("%s花了%d買了一件%s<br>",$name,$price,$goods);
 	echo $fomat;
+
+
+	
 	
 	
 	
