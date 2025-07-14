@@ -85,11 +85,57 @@
     }
 
     // 請找出1-200之間可以被7以及9整除的數?
+    echo "The number can be divided to 0 by 7 and 9<br>";
 
     for($i=1;$i<=200;$i++){
         if($i%7===0 && $i%9===0){
             echo $i."<br>";
         }
+    }
+
+    //while loop前測試迴圈
+
+    $a=6;
+    while($a<10){
+        $a++;
+        echo '$a<10';
+    }
+    echo "<br>";
+    //do while 後測試迴圈,怎樣都會先跑一次
+    $a=6;
+    do{
+        echo '$a<10';
+        $a++;   
+    }while($a>10);
+    //設計抽彩票程式,玩家可以抽出0-10不等的金額,直到抽中0元就不能再抽
+    // output:抽中5元累計5元,抽中3元累計8元
+
+    echo "<br><br>";
+
+    // $price=null;
+    // $acumulate=0;
+
+    // while($price!==0){
+    //     $price=rand(0,10);
+    //     $acumulate+=$price;
+    //     echo "抽中$price"."元,"."累計$acumulate"."元<br>";
+
+    // };
+
+    //老師解答版本1
+    $sum=0;
+    do{
+        $lottery=rand(0,10);
+        $sum+=$lottery;
+        echo "抽中".$lottery."元,累計".$sum."元<br>";
+    }while($lottery!=0);
+    //老師解答版本2
+    $lottery=rand(0,10);
+    while(true){
+        $lttery=rand(0,10);
+        echo "抽中".$lottery."元<br>";
+        if($lottory==0)
+            break;
     }
 
 
