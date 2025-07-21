@@ -17,6 +17,8 @@ if($_POST['sex']==='male'){
 echo "姓名：".$_POST['name']."<br>";
 echo "生日：".$_POST['year']."年".$_POST['month']."月".$_POST['day']."日"."<br>";
 
+// 生日:<?php echo "{$_POST['year']} 年 {$_POST['month']} 月 {$_POST['day']} 日
+
 echo "興趣：";
 foreach($_POST['hobby'] as $val){
     echo "<br>".$val;
