@@ -5,9 +5,10 @@ $turn=rand(0,4);
 $bgColor=$color[$turn];
 
 if($_SERVER['REQUEST_METHOD']=='POST'){
-    
     $turn=rand(0,4);
-<?php $_SESSION[]; ?>
+
+}
+    
 
 
 ?>
